@@ -1,6 +1,6 @@
 /* Estilos globales */
 body {
-  font-family: monospace, Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #CEFFC2;
@@ -86,14 +86,6 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-}
-
-@font-face {
-  font-family: 'B612 Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: href:local(fonts/Monomod.otf);
 }
 
 
