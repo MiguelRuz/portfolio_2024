@@ -41,12 +41,13 @@ nav ul li a {
   padding: 20px;
   text-align: left;
   background-color: #fff;
-  line-height: 130%;
+  line-height: 140%;
 }
 
 /* Sección Trabajos */
 #trabajos {
   padding: 20px;
+  line-height: 140%;
 }
 
 #lista-trabajos {
