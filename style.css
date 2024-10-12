@@ -1,6 +1,6 @@
 /* Estilos globales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #CEFFC2;
@@ -9,10 +9,10 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #ffffff;
+  color: #333333;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
 }
 
 header h1 {
@@ -23,7 +23,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 10px 0 0;
-  text-align: center;
+  text-align: left;
 }
 
 nav ul li {
@@ -32,14 +32,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #333333;
   text-decoration: none;
 }
 
 /* Sección Bio */
 #bio {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
 }
 
@@ -51,7 +51,7 @@ nav ul li a {
 #lista-trabajos {
   list-style: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 #lista-trabajos li {
@@ -68,7 +68,7 @@ nav ul li a {
 #detalle-trabajo {
   padding: 20px;
   background-color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 #detalle-trabajo img {
@@ -79,10 +79,10 @@ nav ul li a {
 
 /* Pie de página */
 footer {
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: #CEFFC2;
+  color: #333333;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -93,8 +93,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(https://design.penpot.app/internal/gfonts/font/b612mono/v14/kmK_Zq85QVWbN1eW6lJV0A7d.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: href:local(fonts/Monomod.otf);
 }
 
 
