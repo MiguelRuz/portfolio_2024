@@ -132,22 +132,22 @@ body {
 .navigation-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navigation-buttons button {
     background-color: transparent; /* Sin fondo */
     color: #333;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 10px;
     cursor: pointer;
 }
 
 .home-button {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .triangle-button {
-    font-size: 30px; /* Ajustar tamaño */
+    font-size: 20px; /* Ajustar tamaño */
 }

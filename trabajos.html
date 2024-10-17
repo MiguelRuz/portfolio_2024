@@ -10,10 +10,16 @@
   <meta name="description" content="iluminación escenografía teatro portfolio">
 
     <!-- FAVICONS -->
-  <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
 
-   <!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles-trabajos.css">
+
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir Materialize JS -->
+    <script src="js/materialize.min.js"></script>
     
 </head>
 <body>
@@ -21,49 +27,49 @@
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <div class="sidebar" id="sidebar">
             <ul>
-                <li><a href="#" onclick="showProject('project1')">Últimos trabajos</a></li>
-                <li><a href="#" onclick="showProject('project43')">Fidelio - OCNE</a></li>
-                <li><a href="#" onclick="showProject('project42')">El futuro - manual de instrucciones</a></li>            
-                <li><a href="#" onclick="showProject('project41')">Obra imposible</a></li>
-                <li><a href="#" onclick="showProject('project40')">Pequeño cúmulo de abismos</a></li>
-                <li><a href="#" onclick="showProject('project39')">El futuro</a></li>
-                <li><a href="#" onclick="showProject('project38')">Auto La vida es sueño</a></li>
-                <li><a href="#" onclick="showProject('project37')">Obra infinita</a></li>
-                <li><a href="#" onclick="showProject('project36')">Obra inacabada</a></li>
-                <li><a href="#" onclick="showProject('project35')">Las explicaciones</a></li>
-                <li><a href="#" onclick="showProject('project34')">Terceiro acto</a></li>
-                <li><a href="#" onclick="showProject('project33')">Silencio</a></li>
-                <li><a href="#" onclick="showProject('project32')">Mi gran noche</a></li>
-                <li><a href="#" onclick="showProject('project31')">La distancia</a></li>
-                <li><a href="#" onclick="showProject('project30')">Cuando todo cambia</a></li>
-                <li><a href="#" onclick="showProject('project29')">Man up</a></li>
-                <li><a href="#" onclick="showProject('project28')">Mutantes</a></li>
-                <li><a href="#" onclick="showProject('project27')">Lear. Desaparecer</a></li>
-                <li><a href="#" onclick="showProject('project26')">Miss Mara</a></li>
-                <li><a href="#" onclick="showProject('project25')">Orfeo y Euridice</a></li>
-                <li><a href="#" onclick="showProject('project24')">Generación Why</a></li>
-                <li><a href="#" onclick="showProject('project23')">Locos de amor</a></li>
-                <li><a href="#" onclick="showProject('project22')">Atlántida</a></li>
-                <li><a href="#" onclick="showProject('project21')">Hijos de Grecia</a></li>
-                <li><a href="#" onclick="showProject('project20')">Mi gran noche</a></li>
-                <li><a href="#" onclick="showProject('project19')">Gratia Plena</a></li>
-                <li><a href="#" onclick="showProject('project18')">Música. Series - OCNE</a></li>
-                <li><a href="#" onclick="showProject('project17')">Jogur | Piano</a></li>
-                <li><a href="#" onclick="showProject('project16')">Invisible</a></li>
-                <li><a href="#" onclick="showProject('project15')">TITO TITO TATITIRORITIRORI EH EH</a></li>
-                <li><a href="#" onclick="showProject('project14')">Un cuerpo en algún lugar</a></li>
-                <li><a href="#" onclick="showProject('project13')">Krak</a></li>
-                <li><a href="#" onclick="showProject('project12')">Elektra</a></li>
-                <li><a href="#" onclick="showProject('project11')">Hamlet entre todos</a></li>
-                <li><a href="#" onclick="showProject('project10')">Las imágenes posibles</a></li>
-                <li><a href="#" onclick="showProject('project9')">Todo para el pueblo. Coreografías públicas</a></li>
-                <li><a href="#" onclick="showProject('project8')">Casa con dos puertas…</a></li>
-                <li><a href="#" onclick="showProject('project7')">Dido y Eneas. A hipster tale</a></li>
-                <li><a href="#" onclick="showProject('project6')">Summer evening</a></li>
-                <li><a href="#" onclick="showProject('project5')">La cena del Rey Baltasar</a></li>
-                <li><a href="#" onclick="showProject('project4')">Kassandra-voces</a></li>
-                <li><a href="#" onclick="showProject('project3')">Cosas que me gustaría ver en un escenario</a></li>
-                <li><a href="#" onclick="showProject('project2')">The Funamviolistas</a></li>
+                <li><a href="#" onclick="showProject('project43')">Últimos trabajos</a></li>
+                <li><a href="#" onclick="showProject('project42')">Fidelio - OCNE</a></li>
+                <li><a href="#" onclick="showProject('project41')">El futuro - manual de instrucciones</a></li>            
+                <li><a href="#" onclick="showProject('project40')">Obra imposible</a></li>
+                <li><a href="#" onclick="showProject('project39')">Pequeño cúmulo de abismos</a></li>
+                <li><a href="#" onclick="showProject('project38')">El futuro</a></li>
+                <li><a href="#" onclick="showProject('project37')">Auto La vida es sueño</a></li>
+                <li><a href="#" onclick="showProject('project36')">Obra infinita</a></li>
+                <li><a href="#" onclick="showProject('project35')">Obra inacabada</a></li>
+                <li><a href="#" onclick="showProject('project34')">Las explicaciones</a></li>
+                <li><a href="#" onclick="showProject('project33')">Terceiro acto</a></li>
+                <li><a href="#" onclick="showProject('project32')">Silencio</a></li>
+                <li><a href="#" onclick="showProject('project31')">Mi gran noche</a></li>
+                <li><a href="#" onclick="showProject('project30')">La distancia</a></li>
+                <li><a href="#" onclick="showProject('project29')">Cuando todo cambia</a></li>
+                <li><a href="#" onclick="showProject('project28')">Man up</a></li>
+                <li><a href="#" onclick="showProject('project27')">Mutantes</a></li>
+                <li><a href="#" onclick="showProject('project26')">Lear. Desaparecer</a></li>
+                <li><a href="#" onclick="showProject('project25')">Miss Mara</a></li>
+                <li><a href="#" onclick="showProject('project24')">Orfeo y Euridice</a></li>
+                <li><a href="#" onclick="showProject('project23')">Generación Why</a></li>
+                <li><a href="#" onclick="showProject('project22')">Locos de amor</a></li>
+                <li><a href="#" onclick="showProject('project21')">Atlántida</a></li>
+                <li><a href="#" onclick="showProject('project20')">Hijos de Grecia</a></li>
+                <li><a href="#" onclick="showProject('project19')">Mi gran noche</a></li>
+                <li><a href="#" onclick="showProject('project18')">Gratia Plena</a></li>
+                <li><a href="#" onclick="showProject('project17')">Música. Series - OCNE</a></li>
+                <li><a href="#" onclick="showProject('project16')">Jogur | Piano</a></li>
+                <li><a href="#" onclick="showProject('project15')">Invisible</a></li>
+                <li><a href="#" onclick="showProject('project14')">TITO TITO TATITIRORITIRORI EH EH</a></li>
+                <li><a href="#" onclick="showProject('project13')">Un cuerpo en algún lugar</a></li>
+                <li><a href="#" onclick="showProject('project12')">Krak</a></li>
+                <li><a href="#" onclick="showProject('project11')">Elektra</a></li>
+                <li><a href="#" onclick="showProject('project10')">Hamlet entre todos</a></li>
+                <li><a href="#" onclick="showProject('project9')">Las imágenes posibles</a></li>
+                <li><a href="#" onclick="showProject('project8')">Todo para el pueblo. Coreografías públicas</a></li>
+                <li><a href="#" onclick="showProject('project7')">Casa con dos puertas…</a></li>
+                <li><a href="#" onclick="showProject('project6')">Dido y Eneas. A hipster tale</a></li>
+                <li><a href="#" onclick="showProject('project5')">Summer evening</a></li>
+                <li><a href="#" onclick="showProject('project4')">La cena del Rey Baltasar</a></li>
+                <li><a href="#" onclick="showProject('project3')">Kassandra-voces</a></li>
+                <li><a href="#" onclick="showProject('project2')">Cosas que me gustaría ver en un escenario</a></li>
+                <li><a href="#" onclick="showProject('project1')">The Funamviolistas</a></li>
             </ul>
         </div>
         <div class="content">
@@ -75,24 +81,24 @@
 
     <div style="display: none;">
 
-        <div id="project1">
+        <div id="project43" class="project-item">
             <h1>Últimos trabajos
             </h1>
             <div class="image-grid">
                 <img src="images/2024-09_OCNE-FIDELIO-3.jpg" alt="Imagen 1">
                 <img src="images/2024-07_El-futuro-Manual-Citemor.jpg" alt="Imagen 2">
                 <img src="images/2024-05_OBRA-IMPOSIBLE_LOS-BÁRBABROS_05.jpeg" alt="Imagen 3">
-                <img src="images/2024-05_OBRA-IMPOSIBLE_LOS-BÁRBABROS_07.jpeg" alt="Imagen 3">
+                <img src="images/2024-05_OBRA-IMPOSIBLE_LOS-BÁRBABROS_07.jpeg" alt="Imagen 4">
             </div>
-          
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <a href="index.html">inicio</a>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" >Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+            
         </div>
-   
-        <div id="project43">
+        <div id="project42" class="project-item">
             <h1>Ludwig van Beethoven (1770-1827)
             </h1>
             <h1>Fidelio, op. 72
@@ -130,12 +136,14 @@
             <p>Enlace web: <a href="https://ocne.mcu.es/explora/programas-temporada-24-25/sala-sinfonica/sinfonico-01-programa-de-mano-20-y-22-de-septiembre-de-2024/@@images/file">link web</a></p>
             </div></p>
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <a href="index.html">inicio</a>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" >Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+
         </div>
-        <div id="project42">
+        <div id="project41" class="project-item">
             <h1>El futuro - manual de instrucciones</h1>
             <div class="image-grid">
                 <img src="images/2024-07-EL FUTURO-CITEMOR 2024-1.jpg" alt="Imagen 1">
@@ -156,13 +164,16 @@
               <p>Enlace web: <a href="https://www.citemor.com/citemor-2024/el-pollo-campero-comidas-para-llevar">link web</a></p>
               <p>Enlace web: <a href="https://www.facebook.com/reel/1602281407220084">link web</a></p>
             </div></p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
+           <div class="navigation-buttons">
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" >Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+
+
         </div>
-        <div id="project41">
+        <div id="project40" class="project-item">
             <h1>Obra imposible</h1>
             <div class="image-grid">
                 <img src="images/2024-05_OBRA-IMPOSIBLE_LOS-BÁRBABROS_07.jpeg" alt="Imagen 1">
@@ -191,12 +202,14 @@
               <p>Enlace web: <a href="https://www.tea-tron.com/losbarbaros/blog/">link web</a></p>
             </div></p>
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" href="index.html">Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+
         </div>
-        <div id="project40">
+        <div id="project39" class="project-item">
             <h1>Pequeño cúmulo de abismos</h1>
             <div class="image-grid">
                 <img src="images/2023-09-Pequeño-cúmulo-de-abismos-2.jpg" alt="Imagen 1">
@@ -224,12 +237,14 @@
               <p>Enlace web: <a href="https://dramatico.mcu.es/evento/pequeno-cumulo-de-abismos/">link web</a></p>
             </div></p>
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" href="index.html">Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+
         </div>
-        <div id="project39">
+        <div id="project38" class="project-item">
             <h1>El futuro</h1>
             <div class="image-grid">
                 <img src="images/2022-10_Elpollocampero-Elfuturo-1.jpg" alt="Imagen 1">
@@ -259,12 +274,14 @@
                 <p>Enlace web: <a href="https://www.facebook.com/reel/1602281407220084">link web</a></p>
             </div></p>
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" href="index.html">Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
+
+
         </div>
-        <div id="project38">
+        <div id="project37" class="project-item">
             <h1>La vida es sueño [el auto sacramental]
             </h1>
             <div class="image-grid">
@@ -279,81 +296,11 @@
             </div>
             <p>Descripción del Proyecto 3.</p>
             <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
+                <button id="prev-btn" class="triangle-button">◄</button>
+                <button id="home-btn" class="home-button" href="index.html">Inicio</button>
+                <button id="next-btn" class="triangle-button">►</button>
             </div>
-        </div>
-        <div id="project37">
-            <h1>Proyecto 3</h1>
-            <div class="image-grid">
-                <img src="imagen3a.jpg" alt="Imagen 1">
-                <img src="imagen3b.jpg" alt="Imagen 2">
-                <img src="imagen3c.jpg" alt="Imagen 3">
-            </div>
-            <p>Descripción del Proyecto 3.</p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
-            </div>
-        </div>
-        <div id="project36">
-            <h1>Proyecto 3</h1>
-            <div class="image-grid">
-                <img src="imagen3a.jpg" alt="Imagen 1">
-                <img src="imagen3b.jpg" alt="Imagen 2">
-                <img src="imagen3c.jpg" alt="Imagen 3">
-            </div>
-            <p>Descripción del Proyecto 3.</p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
-            </div>
-        </div>
-        <div id="project35">
-            <h1>Proyecto 3</h1>
-            <div class="image-grid">
-                <img src="imagen3a.jpg" alt="Imagen 1">
-                <img src="imagen3b.jpg" alt="Imagen 2">
-                <img src="imagen3c.jpg" alt="Imagen 3">
-            </div>
-            <p>Descripción del Proyecto 3.</p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
-            </div>
-        </div>
-        <div id="project34">
-            <h1>Proyecto 3</h1>
-            <div class="image-grid">
-                <img src="imagen3a.jpg" alt="Imagen 1">
-                <img src="imagen3b.jpg" alt="Imagen 2">
-                <img src="imagen3c.jpg" alt="Imagen 3">
-            </div>
-            <p>Descripción del Proyecto 3.</p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
-            </div>
-        </div>
-        <div id="project34">
-            <h1>Proyecto 3</h1>
-            <div class="image-grid">
-                <img src="imagen3a.jpg" alt="Imagen 1">
-                <img src="imagen3b.jpg" alt="Imagen 2">
-                <img src="imagen3c.jpg" alt="Imagen 3">
-            </div>
-            <p>Descripción del Proyecto 3.</p>
-            <div class="navigation-buttons">
-                <button id="prev-btn" class="triangle-button">‹</button>
-                <button id="next-btn" class="triangle-button">›</button>
-                <button id="home-btn" class="home-button">Inicio</button>
-            </div>
-        </div>
+        </div> 
     </div>
 
             
