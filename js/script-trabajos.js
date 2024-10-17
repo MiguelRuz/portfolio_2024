@@ -8,6 +8,8 @@ var projects = ['project1', 'project2', 'project3']; // Asegúrate de que estos 
 function showProject(projectId) {
     var projectInfo = document.querySelector('.project-info');
     projectInfo.classList.remove('show');  // Ocultar con fundido
+
+    // Usar un setTimeout para esperar antes de cambiar el contenido y mostrar el siguiente proyecto
     setTimeout(function() {
         projectInfo.innerHTML = document.getElementById(projectId).innerHTML;
         projectInfo.classList.add('show');  // Mostrar con fundido
@@ -24,6 +26,8 @@ function showProjectByIndex(index) {
 // Mostrar el primer proyecto al cargar la página
 window.onload = function() {
     showProjectByIndex(0);  // Muestra el primer proyecto por defecto
+    // Agregar listener para cerrar el menú cuando se selecciona un proyecto
+    addClickListenerToProjects();
 };
 
 // Función para mostrar/ocultar el menú en móviles
@@ -69,4 +73,18 @@ function addNavigationListeners() {
         nextBtn.onclick = nextProject;
         homeBtn.onclick = goToHome;
     }
+}
+
+// Función para cerrar el menú cuando se selecciona un proyecto en la vista móvil
+function addClickListenerToProjects() {
+    var projectItems = document.querySelectorAll('.project-item');
+
+    projectItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var sidebar = document.getElementById('sidebar');
+            if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');  // Cerrar el menú móvil al seleccionar un proyecto
+            }
+        });
+    });
 }
