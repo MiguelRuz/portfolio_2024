@@ -95,4 +95,4 @@ function addClickListenerToProjects() {
 
 // Añadir el listener al botón de menú hamburguesa
 var mobileMenuButton = document.querySelector('.mobile-menu-button');
-mobileMenuButton.addEventListener('click', toggleMenu);
+// mobileMenuButton.addEventListener('click', toggleMenu);
