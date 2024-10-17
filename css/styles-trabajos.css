@@ -1,0 +1,158 @@
+/* Aplicar la fuente Andale Mono */
+body {
+    font-family: "Andale Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor general */
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row; /* Para pantallas grandes, la barra lateral y el contenido estarán lado a lado */
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 10%;
+    background: white;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Asegura que el sidebar no se reduzca */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px; /* Más espacio por arriba para que el botón no tape el contenido */
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Botón para abrir el menú en móviles */
+.menu-toggle {
+    display: none;
+    position: fixed; /* Fijo para que no tape el contenido */
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 200; /* Para que esté por encima de todo */
+}
+
+/* Contenido de los proyectos */
+.content {
+    width: 80%;
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    flex-grow: 1; /* Para que ocupe el resto del espacio disponible */
+    transition: margin-top 0.5s ease; /* Para permitir que el contenido se ajuste suavemente */
+}
+
+.project-info {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Animación de fundido */
+}
+
+.project-info.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Grid de imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Responsividad para pantallas móviles (menores a 768px) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón de menú */
+    }
+
+    .container {
+        flex-direction: column; /* En móviles, apilar la barra lateral y el contenido verticalmente */
+    }
+
+    .sidebar {
+        display: none;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background: white;
+
+        .sidebar.active {
+            display: block; /* Mostrar el menú cuando se active */
+            margin-bottom: 20px; /* Empujar el contenido hacia abajo */
+        }
+
+        .content {
+            width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
+            margin-top: 60px; /* Añadir más espacio por arriba para que el botón no tape el contenido */
+        }
+
+        .image-grid {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajustar el grid en móviles */
+        }
+    }
+
+    /* Botones de navegación */
+    .navigation-buttons {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .navigation-buttons button {
+        background-color: transparent; /* Sin fondo */
+        color: #333; /* Color del texto */
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 24px; /* Tamaño de los triángulos */
+    }
+
+    .home-button {
+        color: #333; /* Color del texto del botón de inicio */
+        font-size: 18px; /* Tamaño del botón de inicio */
+    }
+
+    .triangle-button {
+        border: none; /* Sin borde */
+        font-size: 24px; /* Tamaño de los triángulos */
+    }
+
+    /* Estilo adicional para el botón de inicio */
+    .home-button {
+        font-size: 18px; /* Tamaño del botón de inicio */
+        margin-top: 10px; /* Espaciado */
+    }
+}

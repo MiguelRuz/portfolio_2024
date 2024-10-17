@@ -1,0 +1,150 @@
+/* Estilos globales */
+body {
+  font-family: 'Andale mono', monospace, 'Helvetica Neue', sans-serif, 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #CEFFC2;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px 0;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+#container {
+  padding-left: 300px;
+}
+
+#content {
+  padding: 20px;
+}
+
+/* Sección Bio */
+#bio {
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  line-height: 140%;
+}
+
+/* Sección Trabajos */
+#trabajos {
+  padding: 20px;
+  line-height: 140%;
+}
+
+#lista-trabajos {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#lista-trabajos li {
+  margin: 10px 0;
+}
+
+#lista-trabajos li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Detalles de proyecto */
+#detalle-trabajo {
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+}
+
+#detalle-trabajo img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+  text-align: left;
+  padding: 10px;
+  background-color: #CEFFC2;
+  color: #333333;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* --- Media Queries para pantallas pequeñas --- */
+
+@media only screen and (max-width : 992px) {
+  #container {
+    padding-left: 0px;
+  }
+}
+
+/* Para pantallas con un ancho máximo de 768px (tablets y smartphones en modo horizontal) */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block; /* Cambiar el menú a una lista vertical */
+      margin: 5px 0;
+  }
+
+  #lista-trabajos li {
+      margin: 5px 0; /* Reducir márgenes entre trabajos */
+  }
+
+  footer {
+      padding: 20px; /* Aumentar el padding en dispositivos más pequeños */
+  }
+}
+
+/* Para pantallas con un ancho máximo de 480px (smartphones en modo vertical) */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5em; /* Reducir el tamaño del título para móviles */
+  }
+
+  nav ul li {
+      display: block; /* Menú en bloque para facilitar la navegación */
+      margin: 10px 0; /* Mayor separación entre enlaces */
+  }
+
+  #bio, #trabajos, #detalle-trabajo {
+      padding: 10px; /* Reducir el padding general */
+  }
+
+  footer {
+      padding: 15px;
+  }
+
+  /* Ajustar el tamaño de fuente para una mejor legibilidad en pantallas pequeñas */
+  body {
+      font-size: 16px;
+  }
+}
+

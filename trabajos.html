@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Andale+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-trabajos.css">
+</head>
+<body>
+    <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#" onclick="showProject('project1')">Proyecto 1</a></li>
+                <li><a href="#" onclick="showProject('project2')">Proyecto 2</a></li>
+                <li><a href="#" onclick="showProject('project3')">Proyecto 3</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="project-info" id="project-info">
+                <!-- Aquí se muestra la información del proyecto -->
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div id="project1">
+            <h2>Proyecto 1</h2>
+            <div class="image-grid">
+                <img src="imagen1a.jpg" alt="Imagen 1">
+                <img src="imagen1b.jpg" alt="Imagen 2">
+                <img src="imagen1c.jpg" alt="Imagen 3">
+            </div>
+            <p>Descripción del Proyecto 1.</p>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="triangle-button">⮜</button>
+                <button id="next-btn" class="triangle-button">⮞</button>
+                <button id="home-btn" class="home-button">Inicio</button>
+            </div>
+        </div>
+        <div id="project2">
+            <h2>Proyecto 2</h2>
+            <div class="image-grid">
+                <img src="imagen2a.jpg" alt="Imagen 1">
+                <img src="imagen2b.jpg" alt="Imagen 2">
+                <img src="imagen2c.jpg" alt="Imagen 3">
+            </div>
+            <p>Descripción del Proyecto 2.</p>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="triangle-button">⮜</button>
+                <button id="next-btn" class="triangle-button">⮞</button>
+                <button id="home-btn" class="home-button">Inicio</button>
+            </div>
+        </div>
+        <div id="project3">
+            <h2>Proyecto 3</h2>
+            <div class="image-grid">
+                <img src="imagen3a.jpg" alt="Imagen 1">
+                <img src="imagen3b.jpg" alt="Imagen 2">
+                <img src="imagen3c.jpg" alt="Imagen 3">
+            </div>
+            <p>Descripción del Proyecto 3.</p>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="triangle-button">⮜</button>
+                <button id="next-btn" class="triangle-button">⮞</button>
+                <button id="home-btn" class="home-button">Inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-trabajos.js"></script>
+</body>
+</html>
