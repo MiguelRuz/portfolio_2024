@@ -7,15 +7,20 @@ var projects = ['project1', 'project2', 'project3']; // Asegúrate de que estos 
 // Función para mostrar el proyecto con fundido
 function showProject(projectId) {
     var projectInfo = document.querySelector('.project-info');
+    var sidebar = document.getElementById('sidebar');
     projectInfo.classList.remove('show');  // Ocultar con fundido
-
-    // Usar un setTimeout para esperar antes de cambiar el contenido y mostrar el siguiente proyecto
     setTimeout(function() {
         projectInfo.innerHTML = document.getElementById(projectId).innerHTML;
         projectInfo.classList.add('show');  // Mostrar con fundido
         addNavigationListeners();  // Añadir listeners a los botones de navegación
+
+        // Cerrar el menú en móviles al hacer clic en un proyecto
+        if (window.innerWidth <= 768) {
+            sidebar.classList.remove('active');
+        }
     }, 500);  // Esperar 500ms antes de mostrar el siguiente proyecto
 }
+
 
 // Función para mostrar el proyecto basado en el índice
 function showProjectByIndex(index) {
@@ -26,8 +31,7 @@ function showProjectByIndex(index) {
 // Mostrar el primer proyecto al cargar la página
 window.onload = function() {
     showProjectByIndex(0);  // Muestra el primer proyecto por defecto
-    // Agregar listener para cerrar el menú cuando se selecciona un proyecto
-    addClickListenerToProjects();
+    addClickListenerToProjects();  // Añadir listeners a los proyectos
 };
 
 // Función para mostrar/ocultar el menú en móviles
@@ -78,7 +82,7 @@ function addNavigationListeners() {
 // Función para cerrar el menú cuando se selecciona un proyecto en la vista móvil
 function addClickListenerToProjects() {
     var projectItems = document.querySelectorAll('.project-item');
-
+    
     projectItems.forEach(function(item) {
         item.addEventListener('click', function() {
             var sidebar = document.getElementById('sidebar');
@@ -88,3 +92,7 @@ function addClickListenerToProjects() {
         });
     });
 }
+
+// Añadir el listener al botón de menú hamburguesa
+var mobileMenuButton = document.querySelector('.mobile-menu-button');
+mobileMenuButton.addEventListener('click', toggleMenu);

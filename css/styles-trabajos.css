@@ -20,12 +20,17 @@ body {
     padding: 20px;
     box-sizing: border-box;
     flex-shrink: 0; /* Asegura que el sidebar no se reduzca */
+    display: block; /* Mostrar el menú lateral en pantallas grandes */
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Mostrar el menú cuando esté activo */
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 60px; /* Más espacio por arriba para que el botón no tape el contenido */
+    margin-top: 80px; /* Más espacio por arriba */
 }
 
 .sidebar ul li {
@@ -44,7 +49,7 @@ body {
 /* Botón para abrir el menú en móviles */
 .menu-toggle {
     display: none;
-    position: fixed; /* Fijo para que no tape el contenido */
+    position: fixed;
     top: 10px;
     left: 10px;
     font-size: 24px;
@@ -62,13 +67,13 @@ body {
     padding: 20px;
     background: white;
     box-sizing: border-box;
-    flex-grow: 1; /* Para que ocupe el resto del espacio disponible */
-    transition: margin-top 0.5s ease; /* Para permitir que el contenido se ajuste suavemente */
+    flex-grow: 1;
+    transition: margin-top 0.5s ease;
+    margin-top: 80px; /* Ajuste para evitar que el botón tape el contenido */
 }
 
 .project-info {
-    display: none;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease; /* Animación de fundido */
 }
 
@@ -77,10 +82,14 @@ body {
     opacity: 1;
 }
 
+.project-info:not(.show) {
+    opacity: 0;
+}
+
 /* Grid de imágenes */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(768px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Aumentar el tamaño mínimo a 600px */
     grid-gap: 10px;
     margin-top: 20px;
 }
@@ -103,56 +112,42 @@ body {
         flex-direction: column; /* En móviles, apilar la barra lateral y el contenido verticalmente */
     }
 
+    .content {
+        width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
+        margin-top: 60px; /* Ajustar margen superior en móviles */
+    }
     .sidebar {
-        display: none;
-        width: 100%;
-        position: relative;
-        z-index: 100;
-        background: white;
+        display: none; /* Ocultar el menú lateral en móviles */
     }
 
     .sidebar.active {
-        display: block; /* Mostrar el menú cuando se active */
-        margin-bottom: 20px; /* Empujar el contenido hacia abajo */
+        display: block; /* Mostrar el menú cuando se active en móviles */
     }
-
-    .content {
-        width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
-        margin-top: 60px; /* Añadir más espacio por arriba para que el botón no tape el contenido */
-    }
-
     .image-grid {
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Ajustar el grid en móviles */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Aumentar también el tamaño en móviles */
     }
 }
 
 /* Botones de navegación */
 .navigation-buttons {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    text-align: center;
 }
 
 .navigation-buttons button {
     background-color: transparent; /* Sin fondo */
-    color: #333; /* Color del texto */
+    color: #333;
     border: none;
-    margin: 0 5px;
+    font-size: 24px;
+    margin: 0 10px;
     cursor: pointer;
-    font-size: 24px; /* Tamaño de los triángulos */
 }
 
 .home-button {
-    color: #333; /* Color del texto del botón de inicio */
-    font-size: 18px; /* Tamaño del botón de inicio */
+    font-size: 20px;
 }
 
 .triangle-button {
-    border: none; /* Sin borde */
-    font-size: 24px; /* Tamaño de los triángulos */
-}
-
-/* Estilo adicional para el botón de inicio */
-.home-button {
-    font-size: 18px; /* Tamaño del botón de inicio */
-    margin-top: 10px; /* Espaciado */
+    font-size: 30px; /* Ajustar tamaño */
 }
