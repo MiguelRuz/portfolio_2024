@@ -1,0 +1,28 @@
+{
+	"Project Template": {
+	  "prefix": "project",
+	  "body": [
+		"<div id=\"project${1}\" class=\"project-content\">",
+		"  <h2>TEATRO/PRODUCCIÓN</h2>",
+		"  <h3>EQUIPO ARTÍSTICO</h3>",
+		"  <p>Dirección: <strong>${3:Nombre}</strong></p>",
+		"  <p>Dramaturgia: <strong>${4:Nombre}</strong></p>",
+		"  <p>Reparto: <strong>${5:Nombre}</strong></p>",
+		"  <p>Escenografía: <strong>${6:Nombre}</strong></p>",
+		"  <p>Iluminación: <strong>${7:Miguel Ruz Velasco}</strong></p>",
+		"  <p>Vestuario: <strong>${8:Nombre}</strong></p>",
+		"  <p>Diseño sonoro: <strong>${9:Nombre}</strong></p>",
+		"  <p>Vídeo: <strong>${10:Nombre}</strong></p>",
+		"  <p>Ayudante de dirección: <strong>${11:Nombre}</strong></p>",
+		"  <p>Ayudante de escenografía: <strong>${12:Nombre}</strong></p>",
+		"  <p>Fotografía: <strong>${13:Nombre}</strong></p>",
+		"  <p>Tráiler: <strong>${14:Nombre}</strong></p>",
+		"  <p>Diseño de cartel: <strong>${15:Nombre}</strong></p>",
+		"  <p>Producción: <strong>${16:Nombre}</strong></p>",
+		"  <p>Enlace web: <a href=\"${17:link web}\">${17:link web}</a></p>",
+		"</div>"
+	  ],
+	  "description": "Plantilla de proyectos con equipo artístico"
+	}
+  }
+  
