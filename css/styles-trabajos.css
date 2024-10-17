@@ -14,8 +14,8 @@ body {
 
 /* Menú lateral */
 .sidebar {
-    width: 10%;
-    background: white;
+    width: 20%;
+    background: linear-gradient(135deg, #1e5799, #7db9e8); /* Degradado de colores */
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: rgb(35, 35, 35);
+    color: white;
     text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ body {
 .content {
     width: 80%;
     padding: 20px;
-    background: white;
+    background: linear-gradient(135deg, #f9a825, #ffeb3b); /* Degradado de colores */
     box-sizing: border-box;
     flex-grow: 1; /* Para que ocupe el resto del espacio disponible */
     transition: margin-top 0.5s ease; /* Para permitir que el contenido se ajuste suavemente */
@@ -108,51 +108,51 @@ body {
         width: 100%;
         position: relative;
         z-index: 100;
-        background: white;
-
-        .sidebar.active {
-            display: block; /* Mostrar el menú cuando se active */
-            margin-bottom: 20px; /* Empujar el contenido hacia abajo */
-        }
-
-        .content {
-            width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
-            margin-top: 60px; /* Añadir más espacio por arriba para que el botón no tape el contenido */
-        }
-
-        .image-grid {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajustar el grid en móviles */
-        }
+        background: linear-gradient(135deg, #1e5799, #7db9e8); /* Mantener el degradado */
     }
 
-    /* Botones de navegación */
-    .navigation-buttons {
-        margin-top: 20px;
-        text-align: center;
+    .sidebar.active {
+        display: block; /* Mostrar el menú cuando se active */
+        margin-bottom: 20px; /* Empujar el contenido hacia abajo */
     }
 
-    .navigation-buttons button {
-        background-color: transparent; /* Sin fondo */
-        color: #333; /* Color del texto */
-        border: none;
-        margin: 0 5px;
-        cursor: pointer;
-        font-size: 24px; /* Tamaño de los triángulos */
+    .content {
+        width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
+        margin-top: 60px; /* Añadir más espacio por arriba para que el botón no tape el contenido */
     }
 
-    .home-button {
-        color: #333; /* Color del texto del botón de inicio */
-        font-size: 18px; /* Tamaño del botón de inicio */
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajustar el grid en móviles */
     }
+}
 
-    .triangle-button {
-        border: none; /* Sin borde */
-        font-size: 24px; /* Tamaño de los triángulos */
-    }
+/* Botones de navegación */
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
 
-    /* Estilo adicional para el botón de inicio */
-    .home-button {
-        font-size: 18px; /* Tamaño del botón de inicio */
-        margin-top: 10px; /* Espaciado */
-    }
+.navigation-buttons button {
+    background-color: transparent; /* Sin fondo */
+    color: #333; /* Color del texto */
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño de los triángulos */
+}
+
+.home-button {
+    color: #333; /* Color del texto del botón de inicio */
+    font-size: 18px; /* Tamaño del botón de inicio */
+}
+
+.triangle-button {
+    border: none; /* Sin borde */
+    font-size: 24px; /* Tamaño de los triángulos */
+}
+
+/* Estilo adicional para el botón de inicio */
+.home-button {
+    font-size: 18px; /* Tamaño del botón de inicio */
+    margin-top: 10px; /* Espaciado */
 }
