@@ -46,6 +46,39 @@ body {
     text-decoration: dashed;
 }
 
+/* Escribir encima de imágenes */
+
+.image-container {
+    position: relative; /* Necesario para el posicionamiento absoluto del overlay */
+    width: 200%; /* Ajusta según tus necesidades */
+    max-width:fit-content; /* Ajusta el ancho máximo si es necesario */
+}
+
+.background-image {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
+.overlay {
+    position: absolute; /* Posicionar el overlay sobre la imagen */
+    top: 0; /* Al inicio */
+    left: 0; /* Al inicio */
+    right: 0; /* Abarcar todo el ancho */
+    bottom: 0; /* Abarcar todo el alto */
+    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo semi-transparente */
+    color: white; /* Color del texto */
+    display: list-item; /* Usar flexbox para centrar el contenido */
+    align-items: start; /* Centrar verticalmente */
+    justify-content: left; /* Centrar horizontalmente */
+    text-align: left; /* Centrar el texto */
+    padding: 20px; /* Espaciado alrededor del texto */
+}
+
+#lista-ultimos-trabajos{
+    line-height: 250%;
+}
+
+
 /* Botón para abrir el menú en móviles */
 .menu-toggle {
     display: none;
@@ -101,6 +134,9 @@ body {
     border: 2px solid #333;
     border-radius: 5px;
 }
+
+
+
 
 /* Responsividad para pantallas móviles (menores a 768px) */
 @media (max-width: 768px) {
