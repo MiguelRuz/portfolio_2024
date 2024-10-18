@@ -57,6 +57,8 @@ body {
 .background-image {
     width: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
     height: auto; /* Mantener la proporción */
+    border: 2px solid #333;
+    border-radius: 5px;
 }
 
 .overlay {
@@ -90,6 +92,7 @@ body {
     color: white;
     padding: 10px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     z-index: 200; /* Para que esté por encima de todo */
 }
