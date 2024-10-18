@@ -89,6 +89,7 @@ function addMobileMenuListener() {
     if (mobileMenuButton && sidebar) {
         mobileMenuButton.addEventListener('click', function() {
             sidebar.classList.toggle('active'); // Alternar la clase 'active' para abrir/cerrar el menú
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Hacer scroll hacia arriba al abrir el menú
         });
     }
 }
