@@ -11,7 +11,7 @@ var projects = Array.from(document.querySelectorAll('.project-item'))
 
 console.log(projects); // Para verificar que los proyectos se están ordenando correctamente
 
-// Función para mostrar el proyecto con fundido
+// Modificar la función showProject para que se desplace hacia arriba al cambiar de proyecto
 function showProject(projectId) {
     var projectInfo = document.querySelector('.project-info');
     var sidebar = document.getElementById('sidebar');
@@ -22,6 +22,9 @@ function showProject(projectId) {
             projectInfo.innerHTML = document.getElementById(projectId).innerHTML; // Asegúrate de que el ID existe
             projectInfo.classList.add('show'); // Mostrar con fundido
             addNavigationListeners(); // Añadir listeners a los botones de navegación
+            
+            // Desplazarse hacia arriba
+            scrollToTop();
 
             // Cerrar el menú en móviles al hacer clic en un proyecto
             if (window.innerWidth <= 768) {
@@ -80,6 +83,14 @@ function goToHome() {
     
 }
 
+// Función para desplazarse al inicio de la página al mostrar un nuevo proyecto
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Hacer que el desplazamiento sea suave
+    });
+}
+
 // Función para cerrar el menú cuando se selecciona un proyecto en la vista móvil
 function addClickListenerToProjects() {
     var projectItems = document.querySelectorAll('.project-item');
@@ -96,4 +107,3 @@ function addClickListenerToProjects() {
 
 // Añadir el listener al botón de menú hamburguesa
 var mobileMenuButton = document.querySelector('.mobile-menu-button');
-// mobileMenuButton.addEventListener('click', toggleMenu);

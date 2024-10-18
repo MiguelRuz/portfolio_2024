@@ -43,7 +43,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
+    text-decoration: dashed;
 }
 
 /* Botón para abrir el menú en móviles */
@@ -116,13 +116,26 @@ body {
         width: 100%; /* Hacer que el contenido ocupe todo el ancho en móviles */
         margin-top: 60px; /* Ajustar margen superior en móviles */
     }
+
     .sidebar {
         display: none; /* Ocultar el menú lateral en móviles */
+        width: 80%;
+        padding-left: 20px;
+    }
+
+    .sidebar ul li {
+        padding-left: 15px 0;  /* Añadir espacio a la izquierda */
+        text-align: left;    /* Asegurar que el texto esté alineado a la izquierda */
+    }
+    
+    .sidebar ul li a {
+        font-size: 18px;  /* Ajustar el tamaño de la fuente para que sea más legible */
     }
 
     .sidebar.active {
         display: block; /* Mostrar el menú cuando se active en móviles */
     }
+
     .image-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Aumentar también el tamaño en móviles */
     }
