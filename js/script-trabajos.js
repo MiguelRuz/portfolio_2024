@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     projects = Array.from(document.querySelectorAll('.project-item')).map(item => item.id);
     showProjectByIndex(currentProjectIndex);  // Muestra el primer proyecto por defecto
     addClickListenerToProjects();  // Añadir listeners a los proyectos
+    addMobileMenuListener();  // Añadir listener al botón del menú móvil
 });
 
 // Función para mostrar el proyecto con fundido
@@ -78,4 +79,16 @@ function addClickListenerToProjects() {
             window.scrollTo({ top: 0, behavior: 'smooth' }); // Hacer scroll hacia arriba al seleccionar un proyecto
         });
     });
+}
+
+// Función para añadir el listener al botón de menú en móviles
+function addMobileMenuListener() {
+    var mobileMenuButton = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+
+    if (mobileMenuButton && sidebar) {
+        mobileMenuButton.addEventListener('click', function() {
+            sidebar.classList.toggle('active'); // Alternar la clase 'active' para abrir/cerrar el menú
+        });
+    }
 }
