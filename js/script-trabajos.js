@@ -20,6 +20,7 @@ function showProject(projectId) {
             projectInfo.innerHTML = document.getElementById(projectId).innerHTML; // Asegúrate de que el ID existe
             projectInfo.classList.add('show'); // Mostrar con fundido
             addNavigationListeners(); // Añadir listeners a los botones de navegación
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Hacer scroll hacia arriba
 
             // Cerrar el menú en móviles al hacer clic en un proyecto
             if (window.innerWidth <= 768) {
@@ -74,6 +75,7 @@ function addClickListenerToProjects() {
             if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
                 sidebar.classList.remove('active'); // Cerrar el menú móvil al seleccionar un proyecto
             }
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Hacer scroll hacia arriba al seleccionar un proyecto
         });
     });
 }
