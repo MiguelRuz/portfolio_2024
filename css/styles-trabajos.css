@@ -5,6 +5,16 @@ body {
     padding: 0;
 }
 
+/* Encabezado */
+.header {
+    background-color: white;
+    color: #333;
+    text-align: right;
+}
+  
+
+
+
 /* Contenedor general */
 .container {
     display: flex;
@@ -190,7 +200,7 @@ body {
 }
 
 .navigation-buttons button {
-    background-color: #fbffe4;
+    background-color: white;
     color: #333;
     border: none;
     font-size: 18px;
@@ -205,7 +215,7 @@ body {
 .home-button-side {
     font-size: 18px;
     color: #333;
-    background-color: #CEFFC2;
+    background-color:aquamarine;
     border-radius: 5px;
 }
 
