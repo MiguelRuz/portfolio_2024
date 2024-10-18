@@ -190,7 +190,7 @@ body {
 }
 
 .navigation-buttons button {
-    background-color: transparent; /* Sin fondo */
+    background-color: #fbffe4;
     color: #333;
     border: none;
     font-size: 18px;
@@ -200,6 +200,13 @@ body {
 
 .home-button {
     font-size: 10px;
+}
+
+.home-button-side {
+    font-size: 18px;
+    color: #333;
+    background-color: #CEFFC2;
+    border-radius: 5px;
 }
 
 .triangle-button {
