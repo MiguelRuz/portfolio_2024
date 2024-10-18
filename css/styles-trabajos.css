@@ -89,7 +89,7 @@ body {
 /* Grid de imágenes */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Aumentar el tamaño mínimo a 600px */
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); /* Aumentar el tamaño mínimo a 600px */
     grid-gap: 10px;
     margin-top: 20px;
 }

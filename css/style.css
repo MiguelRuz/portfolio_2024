@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 nav ul {
@@ -43,10 +43,26 @@ nav ul li a {
 #content {
   padding: 20px;
 }
+/* Sección Header */
+#header {
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  line-height: 140%;
+}
+
+#header-nav a {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: underline dotted blue;
+  color: #0000FF;
+  line-height: 150%;  
+}
 
 /* Sección Bio */
 #bio {
   padding: 20px;
+  font-size: 18px;
   text-align: left;
   background-color: #fff;
   line-height: 140%;
@@ -55,7 +71,8 @@ nav ul li a {
 /* Sección Trabajos */
 #trabajos {
   padding: 20px;
-  line-height: 140%;
+  line-height: 100%;
+
 }
 
 #lista-trabajos {
@@ -66,12 +83,14 @@ nav ul li a {
 
 #lista-trabajos li {
   margin: 10px 0;
-}
-
-#lista-trabajos li a {
-  text-decoration: none;
   color: #333;
   font-weight: bold;
+  text-decoration: underline dashed #333;
+}
+
+#lista-trabajos a {
+  color: #0000FF;
+  text-decoration: none;
 }
 
 /* Detalles de proyecto */
