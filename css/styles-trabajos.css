@@ -41,7 +41,7 @@ body {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 80px; /* Más espacio por arriba */
+    margin-top: 40px; /* Más espacio por arriba */
 }
 
 .sidebar ul li {
@@ -116,7 +116,7 @@ body {
     box-sizing: border-box;
     flex-grow: 1;
     transition: margin-top 0.5s ease;
-    margin-top: 80px; /* Ajuste para evitar que el botón tape el contenido */
+    margin-top: 10px; /* Ajuste para evitar que el botón tape el contenido */
 }
 
 .project-info {
