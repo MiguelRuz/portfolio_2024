@@ -3,7 +3,7 @@ body {
   font-family: 'Andale mono', monospace, 'Helvetica Neue', sans-serif, 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: gold;
+  background-color: lightgreen;
   color: #333;
 }
 
@@ -103,8 +103,8 @@ nav ul li a {
 footer {
   text-align: left;
   padding: 10px;
-  background-color: #CEFFC2;
-  color: #333333;
+  background-color: black;
+  color: lightgreen;
   position: relative;
   bottom: 0;
   width: 100%;
