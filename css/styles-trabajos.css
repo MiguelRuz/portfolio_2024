@@ -9,7 +9,8 @@ body {
 .header {
     background-color: white;
     color: #333;
-    text-align: left;
+    text-align: right;
+    margin-right: 10vh;
 }
   
 
