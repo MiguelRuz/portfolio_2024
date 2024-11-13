@@ -43,13 +43,6 @@ nav ul li a {
 #content {
   padding: 20px;
 }
-/* Sección Header */
-#header {
-  padding: 20px;
-  text-align: left;
-  background-color: #fff;
-  line-height: 140%;
-}
 
 #header-nav a {
   padding: 10px;
