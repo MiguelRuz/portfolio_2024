@@ -9,7 +9,7 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #ffffff;
+  background-color: mediumslateblue;
   color: #333333;
   padding: 10px 0;
   text-align: left;
@@ -57,7 +57,7 @@ nav ul li a {
   padding: 20px;
   font-size: 18px;
   text-align: left;
-  background-color: #fff;
+  background-color: mediumslateblue;
   line-height: 140%;
 }
 
