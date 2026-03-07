@@ -1,10 +1,21 @@
 /* Estilos globales */
 body {
   font-family: 'Andale mono', monospace, 'Helvetica Neue', sans-serif, 'Arial', sans-serif;
-  margin: 0;
+  max-width: 900px;
+  margin: 80px auto;
+  line-height: 1.7;
   padding: 0;
   background-color: lightgreen;
   color: #333;
+}
+
+h1, h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 18px;
 }
 
 /* Encabezado */
@@ -17,6 +28,12 @@ header {
 
 header h1 {
   margin: 10px 0 0;
+}
+
+.tagline {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  opacity: 0.8;
 }
 
 nav ul {
@@ -50,6 +67,21 @@ nav ul li a {
   text-decoration: underline dotted blue;
   color: #0000FF;
   line-height: 150%;  
+}
+
+/* Sección imágenes hero */
+.hero {
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 1.5s ease;
 }
 
 /* Sección Bio */
