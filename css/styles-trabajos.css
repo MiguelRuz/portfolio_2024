@@ -1,13 +1,14 @@
 /* Aplicar la fuente Andale Mono */
 body {
     font-family: "Andale Mono", monospace;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
 
 /* Encabezado */
 .header {
-    background-color: white;
+    background-color: whitesmoke;
     color: #333;
     text-align: right;
     margin-right: 10vh;
@@ -26,7 +27,7 @@ body {
 /* Menú lateral */
 .sidebar {
     width: 20%;
-    background: white; 
+    background: whitesmoke; 
     color: white;
     padding: 20px;
     box-sizing: border-box;

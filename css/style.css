@@ -1,11 +1,11 @@
 /* Estilos globales */
 body {
   font-family: 'Andale mono', monospace, 'Helvetica Neue', sans-serif, 'Arial', sans-serif;
-  max-width: 900px;
+  max-width: 1300px;
   margin: 80px auto;
   line-height: 1.7;
   padding: 0;
-  background-color: rgb(192, 255, 192);
+  background-color: whitesmoke;
   color: #333;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /* Encabezado */
 header {
-  background-color: mediumslateblue;
+  background-color: whitesmoke;
   color: #333333;
   padding: 10px 15px;
   text-align: left;
@@ -135,8 +135,8 @@ nav ul li a {
 footer {
   text-align: left;
   padding: 10px;
-  background-color: black;
-  color: lightgreen;
+  background-color: white;
+  color: slateblue;
   position: relative;
   bottom: 0;
   width: 100%;
