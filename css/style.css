@@ -91,6 +91,7 @@ nav ul li a {
   text-align: left;
   background-color: mediumslateblue;
   line-height: 140%;
+  display: flow-root; 
 }
 
 .bio-img {
