@@ -93,6 +93,22 @@ nav ul li a {
   line-height: 140%;
 }
 
+.bio-shape {
+  max-width: 900px;
+}
+
+/* Imagen con forma de flotación real */
+.bio-img-shape {
+  float: right;
+  width: 260px;
+  height: auto;
+  margin: 0 0 20px 30px;
+
+  /* Esto es lo importante */
+  shape-outside: margin-box;
+  shape-margin: 20px;
+}
+
 /* Sección Trabajos */
 #trabajos {
   padding: 20px;
@@ -190,5 +206,27 @@ footer {
   body {
       font-size: 16px;
   }
+
 }
 
+@media (max-width: 768px) {
+
+  .bio-img-shape {
+    float: none;              /* quitamos el float */
+    display: block;
+    width: 100%;              /* imagen a ancho completo */
+    max-width: 100%;
+    margin: 0 0 20px 0;
+
+    /* desactivamos el shape-outside */
+    shape-outside: none;
+  }
+
+  .bio-shape {
+    max-width: 100%;
+  }
+
+  .parrafo_bio {
+    text-align: left;        /* más legible en móvil */
+  }
+}
