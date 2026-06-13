@@ -85,25 +85,32 @@ nav ul li a {
 }
 
 /* Sección Bio */
-.bio-editorial-simple {
-  max-width: 900px;
-  margin: 0 auto;
+#bio {
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+  background-color: mediumslateblue;
+  line-height: 140%;
 }
 
-.parrafo_bio {
-  text-align: justify;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-/* Imagen controlada y elegante */
-.bio-img {
-  display: block;
+#bio-img {
   width: 100%;
-  max-width: 320px;   /* 👈 clave: evita que sea enorme */
+  max-width: 320px;
   height: auto;
-  margin: 0 auto;     /* centrada */
-  object-fit: cover;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+/* Imagen con forma de flotación real */
+.bio-img-shape {
+  float: right;
+  width: 260px;
+  height: auto;
+  margin: 0 0 20px 30px;
+
+  /* Esto es lo importante */
+  shape-outside: margin-box;
+  shape-margin: 20px;
 }
 
 /* Sección Trabajos */
@@ -195,20 +202,6 @@ footer {
       padding: 10px; /* Reducir el padding general */
   }
 
- .bio-editorial-simple {
-    max-width: 100%;
-    padding: 0 15px;
-  }
-
-  .parrafo_bio {
-    text-align: left; /* mejor lectura en móvil */
-  }
-
-  .bio-img {
-    max-width: 100%;  /* ocupa ancho móvil */
-    margin: 0 auto;
-  }
-
   footer {
       padding: 15px;
   }
@@ -220,3 +213,24 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+
+  .bio-img-shape {
+    float: none;              /* quitamos el float */
+    display: block;
+    width: 100%;              /* imagen a ancho completo */
+    max-width: 100%;
+    margin: 0 0 20px 0;
+
+    /* desactivamos el shape-outside */
+    shape-outside: none;
+  }
+
+  .bio-shape {
+    max-width: 100%;
+  }
+
+  .parrafo_bio {
+    text-align: left;        /* más legible en móvil */
+  }
+}
